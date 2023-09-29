@@ -1,0 +1,8 @@
+1;Aluno Teste;123456;true;212
+2;Júlio Teste;000002;false;210
+3;Ana Teste;000003;false;211
+4;Yuri Teste;000123;false;210
+5;Thiago Teste;000456;true;211
+6;Marcos Teste;000111;true;214
+7;Vanessa Teste;000222;false;213
+8;Priscila Teste;000333;true;214
