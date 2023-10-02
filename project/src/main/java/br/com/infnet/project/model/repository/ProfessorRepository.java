@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 import br.com.infnet.project.model.domain.Professor;
 
 @Repository
-public interface ProfessorRepository extends CrudRepository<Professor, Integer> {
-}
+public interface ProfessorRepository extends CrudRepository<Professor, Integer> {}

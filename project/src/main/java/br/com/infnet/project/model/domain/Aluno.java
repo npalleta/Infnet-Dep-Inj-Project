@@ -87,7 +87,7 @@ public class Aluno extends SalaAula {
 	@Override
 	public String toString() {
 		return String.format(
-			"{ %d;%s;%s;%s;%s }",
+			"{ %d;%s;%s;%s;%s;%s }",
 			this.idAluno,
 			this.nomeAluno,
 			this.matricula,

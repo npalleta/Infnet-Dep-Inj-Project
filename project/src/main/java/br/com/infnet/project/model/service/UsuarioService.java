@@ -26,7 +26,6 @@ public class UsuarioService {
 	}
 
 	public void excluir(String email) {
-		mapaUsuario.remove(email);
 		// usuarioRepository.delete(email);
 	}
 
