@@ -66,7 +66,7 @@ public class AlunoController {
 	}
 
 	@ExceptionHandler(EnumSalaAulaException.class)
-	public String handleNumSalaAulaException(HttpServletRequest request, Model model, EnumSalaAulaException ex) {
+	public String handleNumSalaAulaException(Model model, EnumSalaAulaException ex) {
 		model.addAttribute("exception", ex);
 		return "erro/erroSalaAula";
 	}
