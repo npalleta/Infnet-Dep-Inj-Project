@@ -26,7 +26,7 @@
 					<label for="email">E-mail:</label>
 					<input type="email" class="form-control" value="niky.lima@al.infnet.edu.br" id="email" placeholder="Entre com o seu e-mail" name="email">
 				</div>
-				<button type="submit" class="btn btn-primary">Acessar</button>
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
 			</form>
 		</div>
 	</body>

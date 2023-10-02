@@ -1,6 +1,7 @@
 package br.com.infnet.project.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import br.com.infnet.project.exception.EnumSalaAulaException;
 import br.com.infnet.project.model.domain.Aluno;
@@ -41,9 +43,21 @@ public class ProfessorController {
 	}
 
 	@PostMapping(value = "/professor/incluir")
-	public String incluir(Model model, Aluno aluno, Professor professor) {
+	public String incluir(
+		Model model,
+		Aluno aluno,
+		Professor professor,
+		HttpSession session,
+		SessionStatus status
+	) {
 		model.addAttribute("aluno", aluno);
 		this.professorService.incluir(professor, aluno);
+
+		status.setComplete();
+
+		session.removeAttribute("responsavel");
+		session.removeAttribute("aluno");
+
 		return "redirect:/professor/lista";
 	}
 

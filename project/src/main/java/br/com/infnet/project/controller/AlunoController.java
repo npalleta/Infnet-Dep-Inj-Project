@@ -30,18 +30,18 @@ public class AlunoController {
 	}
 
 	@GetMapping(value = "/aluno/lista")
-	public String lista(Model model, HttpSession session, SessionStatus status) {
+	public String lista(Model model) {
 		model.addAttribute("listaAluno", alunoService.obterLista());
-		status.setComplete();
-		session.removeAttribute("aluno");
 		return "aluno/lista";
 	}
 
 	@GetMapping(value = "/aluno/cadastro")
 	public String cadastro(Model model, HttpSession session, SessionStatus status) {
 		model.addAttribute("matricula", Funcoes.gerarMatricula());
+		
 		status.setComplete();
 		session.removeAttribute("aluno");
+		
 		return "aluno/cadastro";
 	}
 
