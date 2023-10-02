@@ -36,7 +36,7 @@ public class AlunoController {
 	}
 
 	@GetMapping(value = "/aluno/lista")
-	public String lista(Model model, HttpSession session, SessionStatus status) {
+	public String lista(Model model) {
 		alunos.add(new Aluno(1, "Jandira", "123000", true, null));
 		alunos.add(new Aluno(2, "Priscila", "456000", true, null));
 		alunos.add(new Aluno(3, "Adilson W. Freitas", "789000", true, null));

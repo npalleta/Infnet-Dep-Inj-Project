@@ -29,9 +29,8 @@ public class ProfessorController {
 	}
 
 	@GetMapping(value = "/professor/lista")
-	public String lista(Model model, HttpSession session, SessionStatus status) {
+	public String lista(Model model) {
 		model.addAttribute("listaProfessor", professorService.obterLista());
-
 		return "professor/lista";
 	}
 
