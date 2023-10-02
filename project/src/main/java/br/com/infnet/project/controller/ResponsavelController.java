@@ -1,7 +1,5 @@
 package br.com.infnet.project.controller;
 
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
-import org.springframework.web.bind.support.SessionStatus;
 
 import br.com.infnet.project.model.domain.Aluno;
 import br.com.infnet.project.model.domain.Responsavel;
@@ -26,10 +23,8 @@ public class ResponsavelController {
 	}
 
 	@GetMapping(value = "/responsavel/lista")
-	public String lista(Model model, HttpSession session, SessionStatus status) {
+	public String lista(Model model) {
 		model.addAttribute("listaResponsavel", responsavelService.obterLista());
-		status.setComplete();
-		session.removeAttribute("responsavel");
 		return "responsavel/lista";
 	}
 
@@ -39,9 +34,14 @@ public class ResponsavelController {
 	}
 
 	@PostMapping(value = "/responsavel/incluir")
-	public String incluir(Model model, Aluno aluno, Responsavel responsavel) {
+	public String incluir(
+		Model model,
+		Aluno aluno,
+		Responsavel responsavel
+	) {
 		model.addAttribute("aluno", aluno);
 		this.responsavelService.incluir(responsavel, aluno);
+
 		return "redirect:/professor/cadastro";
 	}
 

@@ -15,12 +15,12 @@ public class AppController {
 	public String home() {
 		return "home";
 	}
-	
+
 	@GetMapping(value = "/login")
 	public String login() {
 		return "login";
 	}
-	
+
 	@GetMapping(value = "/logout")
 	public String telaLogout(HttpSession session, SessionStatus status) {
 		status.setComplete();

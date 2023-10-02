@@ -1,17 +1,7 @@
 package br.com.infnet.project.model.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "TProfessor")
 public class Professor extends SalaAula {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idProfessor;
 	private String nomeProfessor;
 	private String materia;

@@ -1,26 +1,13 @@
 package br.com.infnet.project.model.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "TAluno")
 public class Aluno extends SalaAula {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idAluno;
-	
 	private String nomeAluno;
 	private String matricula;
 	private Boolean ativo;
 	private Integer numSala;
 	
-	@OneToOne(mappedBy = "aluno")
 	private Responsavel responsavel;
 	
 	public Aluno() {
@@ -87,7 +74,7 @@ public class Aluno extends SalaAula {
 	@Override
 	public String toString() {
 		return String.format(
-			"{ %d;%s;%s;%s;%s }",
+			"{ %d;%s;%s;%s;%s;%s }",
 			this.idAluno,
 			this.nomeAluno,
 			this.matricula,

@@ -24,21 +24,23 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="/">Responsável
 						<span class="caret"></span>
 					</a>
-					<!-- <c:if test="${not empty aluno}"></c:if> -->
-					<ul class="dropdown-menu">
-						<li><a href="/responsavel/cadastro">Cadastro</a></li>
-						<li><a href="/responsavel/lista">Lista de Responsáveis</a></li>
-					</ul>
+						<ul class="dropdown-menu">
+							<c:if test="${not empty aluno}">
+								<li><a href="/responsavel/cadastro">Cadastro</a></li>
+							</c:if>
+							<li><a href="/responsavel/lista">Lista de Responsáveis</a></li>
+						</ul>
 				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="/">Professor
 						<span class="caret"></span>
 					</a>
-					<!-- <c:if test="${not empty responsavel}"></c:if> -->
-					<ul class="dropdown-menu">
-						<li><a href="/professor/cadastro">Cadastro</a></li>
-						<li><a href="/professor/lista">Lista de Professores</a></li>
-					</ul>
+						<ul class="dropdown-menu">
+							<c:if test="${not empty responsavel}">
+								<li><a href="/professor/cadastro">Cadastro</a></li>
+							</c:if>
+							<li><a href="/professor/lista">Lista de Professores</a></li>
+						</ul>
 				</li>
 			</c:if>
 		</ul>
