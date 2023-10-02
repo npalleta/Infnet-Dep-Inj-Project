@@ -16,9 +16,9 @@
 			<h1 align="center">Cadastramento De Responsável</h1><br />
 			<form class="form-horizontal" action="/responsavel/incluir" method="post">
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="">Nome:</label>
+					<label class="control-label col-sm-2" for="">Id do Aluno:</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="idAluno" placeholder="" name="idAluno" value="${aluno.idAluno}" required />
+						<input type="text" class="form-control" id="idAluno" placeholder="Id do Aluno" name="idAluno" value="${aluno.idAluno}" readonly required />
 					</div>
 				</div>
 				<div class="form-group">
