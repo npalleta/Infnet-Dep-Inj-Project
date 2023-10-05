@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,14 +13,10 @@ public class Aluno extends SalaAula {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idAluno;
-	
 	private String nomeAluno;
 	private String matricula;
 	private Boolean ativo;
 	private Integer numSala;
-	
-	@OneToOne(mappedBy = "aluno")
-	private Responsavel responsavel;
 	
 	public Aluno() {
 		super();
@@ -76,25 +71,16 @@ public class Aluno extends SalaAula {
 		this.numSala = numSala;
 	}
 
-	public Responsavel getResponsavel() {
-		return responsavel;
-	}
-
-	public void setResponsavel(Responsavel responsavel) {
-		this.responsavel = responsavel;
-	}
-
 	@Override
 	public String toString() {
 		return String.format(
-			"{ %d;%s;%s;%s;%s;%s }",
+			"{ %d;%s;%s;%s;%s;%d }",
 			this.idAluno,
 			this.nomeAluno,
 			this.matricula,
 			this.ativo,
 			this.numSala,
-			this.responsavel
-			// super.getNumSala()
+			super.getNumSala()
 		);
 	}
 }

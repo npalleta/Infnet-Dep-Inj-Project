@@ -21,18 +21,20 @@ public class ResponsavelService {
 	}
 
 	public void incluir(Responsavel responsavel, Aluno aluno) {
+		
+		responsavel.setAluno(aluno);
 
 		out.printf("%n[Responsável] Inclusão realizada com sucesso: %s%n", responsavel);
 		out.printf("%n[Aluno] Dados de Aluno na Sessão: %s%n", aluno);
 
-		responsavelRepository.save(responsavel);
+		this.responsavelRepository.save(responsavel);
 	}
 
 	public void excluir(Integer id) {
-		responsavelRepository.deleteById(id);
+		this.responsavelRepository.deleteById(id);
 	}
 
 	public Collection<Responsavel> obterLista() {
-		return (Collection<Responsavel>) responsavelRepository.findAll();
+		return (Collection<Responsavel>) this.responsavelRepository.findAll();
 	}
 }

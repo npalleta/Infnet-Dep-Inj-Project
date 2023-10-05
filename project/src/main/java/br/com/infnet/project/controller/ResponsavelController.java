@@ -41,7 +41,7 @@ public class ResponsavelController {
 	}
 
 	@GetMapping(value = "/responsavel/{id}/excluir")
-	public String exclusao(@PathVariable Integer id) {
+	public String excluir(@PathVariable Integer id) {
 		this.responsavelService.excluir(id);
 		return "redirect:/responsavel/lista";
 	}

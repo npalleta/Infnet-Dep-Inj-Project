@@ -21,7 +21,7 @@ public class UsuarioService {
 	private Map<String, Usuario> mapaUsuario = new HashMap<>();
 
 	public void incluir(Usuario usuario) {
-		mapaUsuario.put(usuario.getEmail(), usuario);
+		this.mapaUsuario.put(usuario.getEmail(), usuario);
 		out.println("[Usuário] Inclusão realizada com sucesso: " + usuario);
 	}
 
@@ -30,7 +30,7 @@ public class UsuarioService {
 	}
 
 	public Usuario validar(String email, String senha) {
-		Usuario usuario = mapaUsuario.get(email);
+		Usuario usuario = this.mapaUsuario.get(email);
 		if (usuario != null) {
 			if (senha.equalsIgnoreCase(usuario.getSenha()))
 				return usuario;
@@ -39,6 +39,6 @@ public class UsuarioService {
 	}
 
 	public Collection<Usuario> obterLista() {
-		return mapaUsuario.values();
+		return this.mapaUsuario.values();
 	}
 }

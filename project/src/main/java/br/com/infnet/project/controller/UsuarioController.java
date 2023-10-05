@@ -23,7 +23,7 @@ public class UsuarioController {
 
 	@PostMapping(value = "/valida")
 	public String validaLogin(Model model, @RequestParam String email, @RequestParam String senha) {
-		Usuario user = usuarioService.validar(email, senha);
+		Usuario user = this.usuarioService.validar(email, senha);
 		out.printf("Credenciais: %s - %s", email, senha);
 		if (user != null) {
 			model.addAttribute("user", user);
@@ -34,7 +34,7 @@ public class UsuarioController {
 
 	@GetMapping(value = "/usuario/lista")
 	public String lista(Model model) {
-		model.addAttribute("listaUsuario", usuarioService.obterLista());
+		model.addAttribute("listaUsuario", this.usuarioService.obterLista());
 		return "usuario/lista";
 	}
 
@@ -45,13 +45,13 @@ public class UsuarioController {
 
 	@PostMapping(value = "/usuario/incluir")
 	public String inclusao(Usuario usuario) {
-		usuarioService.incluir(usuario);
+		this.usuarioService.incluir(usuario);
 		return "redirect:/";
 	}
 
 	@GetMapping(value = "/usuario/{email}/excluir")
 	public String exclusao(@PathVariable String email) {
-		usuarioService.excluir(email);
+		this.usuarioService.excluir(email);
 		return "redirect:/usuario/lista";
 	}
 }

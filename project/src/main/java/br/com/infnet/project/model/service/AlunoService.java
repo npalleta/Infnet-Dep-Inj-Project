@@ -38,14 +38,14 @@ public class AlunoService {
 		
         out.printf("%n[Aluno] Inclusão realizada com sucesso: %s%n", aluno);
 		
-		alunoRepository.save(aluno);
+        this.alunoRepository.save(aluno);
 	}
 
 	public void excluir(Integer id) {
-		alunoRepository.deleteById(id);
+		this.alunoRepository.deleteById(id);
 	}
 
 	public Collection<Aluno> obterLista() {
-		return (Collection<Aluno>) alunoRepository.findAll();
+		return (Collection<Aluno>) this.alunoRepository.findAll();
 	}
 }

@@ -31,7 +31,7 @@
 							<td>${p.idProfessor}</td>
 							<td>${p.nomeProfessor}</td>
 							<td>${p.numSala}</td>
-							<td>${p.idAluno}</td>
+							<td>${p.aluno.idAluno}</td>
 							<td>${p.materia}</td>
 							<td><a href="/professor/${p.idProfessor}/excluir">excluir</a></td>
 						</tr>

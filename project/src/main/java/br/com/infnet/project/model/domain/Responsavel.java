@@ -16,13 +16,10 @@ public class Responsavel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idResponsavel;
-	
 	private String nomeResponsavel;
-	
 	private Character parentesco;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "idAluno", referencedColumnName = "idAluno")
+	@OneToOne(cascade = CascadeType.DETACH)
+    @JoinColumn(name = "idAluno")
 	private Aluno aluno;
 	
 	public Responsavel() {

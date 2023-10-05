@@ -42,6 +42,17 @@
 						<li><a href="/professor/lista">Lista de Professores</a></li>
 					</ul>
 				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="/">Ficha de Dados - Registro Escolar
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<c:if test="${not empty professor}">
+							<li><a href="/ficha/cadastro">Cadastro</a></li>
+						</c:if>
+						<li><a href="/ficha/lista">Lista de Dados - Registro Escolar</a></li>
+					</ul>
+				</li>
 			</c:if>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">

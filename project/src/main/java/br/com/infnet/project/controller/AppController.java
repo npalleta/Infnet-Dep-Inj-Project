@@ -22,7 +22,7 @@ public class AppController {
 	}
 	
 	@GetMapping(value = "/logout")
-	public String telaLogout(HttpSession session, SessionStatus status) {
+	public String logout(HttpSession session, SessionStatus status) {
 		status.setComplete();
 		session.removeAttribute("user");
 		return "redirect:/";

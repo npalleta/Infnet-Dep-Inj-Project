@@ -1,2 +1,2 @@
-211;1;1;Professor Jorge;Geografia;Quarta
-214;1;1;Professora Maria;Portugues;Segunda
+211;1;Professor Jorge;Geografia;Quarta;null
+214;1;Professora Maria;Portugues;Segunda;null

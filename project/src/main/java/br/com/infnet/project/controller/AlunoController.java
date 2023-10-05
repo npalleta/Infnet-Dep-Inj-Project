@@ -37,10 +37,9 @@ public class AlunoController {
 	@GetMapping(value = "/aluno/cadastro")
 	public String cadastro(Model model, HttpSession session, SessionStatus status) {
 		model.addAttribute("matricula", Funcoes.gerarMatricula());
-		
 		status.setComplete();
 		session.removeAttribute("aluno");
-		
+		session.removeAttribute("listaDados");
 		return "aluno/cadastro";
 	}
 
@@ -59,7 +58,7 @@ public class AlunoController {
 	}
 
 	@GetMapping(value = "/aluno/{id}/excluir")
-	public String exclusao(@PathVariable Integer id) {
+	public String excluir(@PathVariable Integer id) {
 		this.alunoService.excluir(id);
 		return "redirect:/aluno/lista";
 	}

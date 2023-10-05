@@ -13,12 +13,16 @@
 	<body>
 		<div class="container">	
 	 		<h1 align="center" style="color: #a94442">
-	 			<i><strong>Erro de preenchimento - Sala inválida</strong></i>
+	 			<i>
+	 				<strong>
+	 					Erro de preenchimento - Sala inválida
+	 				</strong>
+	 			</i>
 	 		</h1><br />
 			<div class="alert alert-danger" align="center">
 				<strong>${exception.message}</strong>
 			</div>
-			<button type="button" value="Voltar" class="btn btn-default" onclick="history.back()">Voltar</button>
+			<button type="button" class="btn btn-default" value="Voltar" onclick="history.back()">Voltar</button>
 		</div>
 	</body>
 </html>

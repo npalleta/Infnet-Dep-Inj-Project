@@ -13,6 +13,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import br.com.infnet.project.model.domain.Aluno;
 import br.com.infnet.project.model.domain.Professor;
 
 @Order(3)
@@ -45,10 +46,10 @@ public class ProfessorLoader implements ApplicationRunner {
 			this.professor = new Professor(
 				Integer.valueOf(campos[0]),
 				Integer.valueOf(campos[1]),
-				Integer.valueOf(campos[2]),
+				campos[2],
 				campos[3],
 				campos[4],
-				campos[5]
+				new Aluno() // CRIAR ALUNO
 			);
 			
 			this.mapaProfessor.put(professor.getIdProfessor(), professor);

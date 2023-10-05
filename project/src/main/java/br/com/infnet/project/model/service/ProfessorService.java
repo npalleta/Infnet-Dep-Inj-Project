@@ -24,7 +24,7 @@ public class ProfessorService {
 
 	public void incluir(Professor professor, Aluno aluno) {
 
-		professor.setIdAluno(aluno.getIdAluno());
+		professor.setAluno(aluno);
 		professor.setNumSala(aluno.getNumSala());
 
 		professor.setMateria(EnumSalaAula.devolverMateria(professor.getNumSala()));
@@ -44,14 +44,14 @@ public class ProfessorService {
 		
 		out.printf("%n[Professor] Inclusão realizada com sucesso: %s%n", professor);
 
-		professorRepository.save(professor);
+		this.professorRepository.save(professor);
 	}
 
 	public void excluir(Integer id) {
-		professorRepository.deleteById(id);
+		this.professorRepository.deleteById(id);
 	}
 
 	public Collection<Professor> obterLista() {
-		return (Collection<Professor>) professorRepository.findAll();
+		return (Collection<Professor>) this.professorRepository.findAll();
 	}
 }
