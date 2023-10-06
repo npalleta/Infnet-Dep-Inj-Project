@@ -16,11 +16,11 @@
 			<form action="/valida" method="post">
 				<div class="form-group">
 					<label for="email">E-mail:</label>
-					<input type="email" class="form-control" value="niky.lima@al.infnet.edu.br" id="email" placeholder="Entre com o seu e-mail" name="email">
+					<input type="email" class="form-control" value="niky.lima@al.infnet.edu.br" id="email" name="email" placeholder="Entre com o seu e-mail">
 				</div>
 				<div class="form-group">
 					<label for="pwd">Senha:</label>
-					<input type="password" class="form-control" value="niky.lima@al.infnet.edu.br" id="senha" placeholder="Entre com a sua senha" name="senha">
+					<input type="password" class="form-control" value="niky.lima@al.infnet.edu.br" id="senha" name="senha" placeholder="Entre com a sua senha">
 				</div>
 				<button type="submit" class="btn btn-primary">Acessar</button>
 			</form>

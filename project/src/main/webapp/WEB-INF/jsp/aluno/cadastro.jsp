@@ -18,19 +18,19 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Nome:</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nomeAluno" placeholder="Nome e sobrenome" name="nomeAluno" required />
+						<input type="text" class="form-control" id="nomeAluno" name="nomeAluno" placeholder="Nome e sobrenome" required />
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Matrícula:</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="matricula" placeholder="" value="${matricula}" name="matricula" readonly />
+						<input type="text" class="form-control" id="matricula" name="matricula" placeholder="" value="${matricula}" readonly />
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Número da Sala:</label>
 					<div class="col-sm-10">
-						<input inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" maxlength="3" class="form-control" id="numSala" placeholder="Número da Sala" name="numSala" required />
+						<input inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" maxlength="3" class="form-control" id="numSala" name="numSala" placeholder="Número da Sala" required />
 					</div>
 				</div>
 				<div class="form-group">

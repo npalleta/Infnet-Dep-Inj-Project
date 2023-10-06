@@ -26,17 +26,17 @@ public class ResponsavelService {
 		this.id++;
 		responsavel.setAluno(aluno);
 		responsavel.setIdResponsavel(this.id);
-		mapaResponsavel.put(responsavel.getIdResponsavel(), responsavel);
+		this.mapaResponsavel.put(responsavel.getIdResponsavel(), responsavel);
 
 		out.printf("%n[Responsável] Inclusão realizada com sucesso: %s%n", responsavel);
 		out.printf("%n[Aluno] Dados de Aluno na Sessão: %s%n", aluno);
 	}
 
 	public void excluir(Integer id) {
-		mapaResponsavel.remove(id);
+		this.mapaResponsavel.remove(id);
 	}
 
 	public Collection<Responsavel> obterLista() {
-		return mapaResponsavel.values();
+		return this.mapaResponsavel.values();
 	}
 }

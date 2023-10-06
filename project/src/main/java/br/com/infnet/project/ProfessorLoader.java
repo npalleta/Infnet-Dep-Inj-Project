@@ -51,7 +51,7 @@ public class ProfessorLoader implements ApplicationRunner {
 				campos[5]
 			);
 			
-			this.mapaProfessor.put(professor.getIdProfessor(), professor);
+			this.mapaProfessor.put(professor.getIdProfessor(), this.professor);
 			linha = leitura.readLine();
 		}
 

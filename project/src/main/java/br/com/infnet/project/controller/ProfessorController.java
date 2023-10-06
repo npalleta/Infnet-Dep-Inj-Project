@@ -64,7 +64,6 @@ public class ProfessorController {
 	@GetMapping(value = "/professor/{id}/excluir")
 	public String exclusao(@PathVariable Integer id) {
 		this.professorService.excluir(id);
-
 		return "redirect:/professor/lista";
 	}
 

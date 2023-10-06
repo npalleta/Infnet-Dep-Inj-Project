@@ -54,7 +54,7 @@ public class AlunoLoader implements ApplicationRunner {
 			);
 			
 			// this.mapaAluno.put(aluno.getIdAluno(), aluno);
-			alunoService.incluir(aluno);
+			this.alunoService.incluir(this.aluno);
 			
 			linha = leitura.readLine();
 		}

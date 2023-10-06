@@ -18,13 +18,13 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Nome:</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nomeProfessor" placeholder="Nome e sobrenome" name="nomeProfessor" required />
+						<input type="text" class="form-control" id="nomeProfessor" name="nomeProfessor" placeholder="Nome e sobrenome" required />
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Número da Sala:</label>
 					<div class="col-sm-10">
-						<input inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" maxlength="3" class="form-control" id="numSala" placeholder="" name="numSala" value="${aluno.numSala}" />
+						<input inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" maxlength="3" class="form-control" id="numSala" name="numSala" value="${aluno.numSala}" placeholder="" />
 					</div>
 				</div>
 				

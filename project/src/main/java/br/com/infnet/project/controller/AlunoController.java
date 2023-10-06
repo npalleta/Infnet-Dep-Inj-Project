@@ -37,9 +37,9 @@ public class AlunoController {
 
 	@GetMapping(value = "/aluno/lista")
 	public String lista(Model model) {
-		alunos.add(new Aluno(1, "Jandira", "123000", true, null));
-		alunos.add(new Aluno(2, "Priscila", "456000", true, null));
-		alunos.add(new Aluno(3, "Adilson W. Freitas", "789000", true, null));
+		this.alunos.add(new Aluno(1, "Jandira", "123000", true, null));
+		this.alunos.add(new Aluno(2, "Priscila", "456000", true, null));
+		this.alunos.add(new Aluno(3, "Adilson W. Freitas", "789000", true, null));
 		
 		model.addAttribute("listaAluno", alunoService.obterLista());
 
@@ -68,7 +68,7 @@ public class AlunoController {
 		model.addAttribute("aluno", aluno);
 		boolean verificador = (ativo != null) && ativo;
 		aluno.setAtivo(verificador);
-		alunoService.incluir(aluno);
+		this.alunoService.incluir(aluno);
 		return "redirect:/responsavel/cadastro";
 	}
 

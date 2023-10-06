@@ -40,15 +40,15 @@ public class AlunoService {
 			throw new EnumSalaAulaException();
 		}
 
-		mapaAluno.put(aluno.getIdAluno(), aluno);
+		this.mapaAluno.put(aluno.getIdAluno(), aluno);
 		out.printf("%n[Aluno] Inclusão realizada com sucesso: %s%n", aluno);
 	}
 
 	public void excluir(Integer id) {
-		mapaAluno.remove(id);
+		this.mapaAluno.remove(id);
 	}
 
 	public Collection<Aluno> obterLista() {
-		return mapaAluno.values();
+		return this.mapaAluno.values();
 	}
 }

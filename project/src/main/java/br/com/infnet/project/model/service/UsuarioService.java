@@ -16,12 +16,12 @@ public class UsuarioService {
 	private Map<String, Usuario> mapaUsuario = new HashMap<>();
 
 	public void incluir(Usuario usuario) {
-		mapaUsuario.put(usuario.getEmail(), usuario);
+		this.mapaUsuario.put(usuario.getEmail(), usuario);
 		out.printf("%n[Usuário] Inclusão realizada com sucesso: %s%n", usuario);
 	}
 
 	public void excluir(String email) {
-		mapaUsuario.remove(email);
+		this.mapaUsuario.remove(email);
 	}
 
 	public Usuario validar(String email, String senha) {
@@ -34,6 +34,6 @@ public class UsuarioService {
 	}
 
 	public Collection<Usuario> obterLista() {
-		return mapaUsuario.values();
+		return this.mapaUsuario.values();
 	}
 }

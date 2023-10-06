@@ -41,7 +41,6 @@ public class ResponsavelController {
 	) {
 		model.addAttribute("aluno", aluno);
 		this.responsavelService.incluir(responsavel, aluno);
-
 		return "redirect:/professor/cadastro";
 	}
 

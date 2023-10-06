@@ -56,7 +56,7 @@ public class ResponsavelLoader implements ApplicationRunner {
 				campos[7].charAt(0)
 			);
 			
-			this.mapaResponsavel.put(responsavel.getIdResponsavel(), responsavel);
+			this.mapaResponsavel.put(responsavel.getIdResponsavel(), this.responsavel);
 			linha = leitura.readLine();
 		}
 

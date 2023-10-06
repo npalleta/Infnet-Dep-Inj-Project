@@ -45,13 +45,13 @@ public class UsuarioController {
 
 	@PostMapping(value = "/usuario/incluir")
 	public String inclusao(Usuario usuario) {
-		usuarioService.incluir(usuario);
+		this.usuarioService.incluir(usuario);
 		return "redirect:/";
 	}
 
 	@GetMapping(value = "/usuario/{email}/excluir")
 	public String exclusao(@PathVariable String email) {
-		usuarioService.excluir(email);
+		this.usuarioService.excluir(email);
 		return "redirect:/usuario/lista";
 	}
 }

@@ -48,15 +48,15 @@ public class ProfessorService {
 			throw new EnumSalaAulaException();
 		}
 
-		mapaProfessor.put(professor.getIdProfessor(), professor);
+		this.mapaProfessor.put(professor.getIdProfessor(), professor);
 		out.printf("%n[Professor] Inclusão realizada com sucesso: %s%n", professor);
 	}
 
 	public void excluir(Integer id) {
-		mapaProfessor.remove(id);
+		this.mapaProfessor.remove(id);
 	}
 
 	public Collection<Professor> obterLista() {
-		return mapaProfessor.values();
+		return this.mapaProfessor.values();
 	}
 }

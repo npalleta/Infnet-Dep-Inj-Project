@@ -18,13 +18,13 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="" hidden>Id do Aluno:</label>
 					<div class="col-sm-10">
-						<input type="hidden" class="form-control" id="idAluno" placeholder="" name="idAluno" value="${aluno.idAluno}" required />
+						<input type="hidden" class="form-control" id="idAluno" name="idAluno" placeholder="" value="${aluno.idAluno}" required />
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Nome:</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nomeResponsavel" placeholder="Nome e sobrenome" name="nomeResponsavel" required />
+						<input type="text" class="form-control" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome e sobrenome" required />
 					</div>
 				</div>
 				<div class="form-group">
