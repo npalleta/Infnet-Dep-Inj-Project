@@ -18,7 +18,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>ID Ficha</th>
                         <th>Nome do Aluno</th>
                         <th>Matrícula</th>
                         <th>Ativo</th>
@@ -45,7 +45,17 @@
 								</c:otherwise>
 							</c:choose>
 							<td><c:out value="${d.nomeResponsavel}" escapeXml="false" /></td>
-							<td><c:out value="${d.parentesco}" escapeXml="false" /></td>
+							<c:choose>
+								<c:when test="${fn:containsIgnoreCase(d.parentesco, 'M')}">
+									<td><c:out value="Mãe" escapeXml="false" /></td>
+								</c:when>
+								<c:when test="${fn:containsIgnoreCase(d.parentesco, 'P')}">
+									<td><c:out value="Pai" escapeXml="false" /></td>
+								</c:when>
+								<c:otherwise>
+									<td><c:out value="Outro" escapeXml="false" /></td>
+								</c:otherwise>
+							</c:choose>
 							<td><c:out value="${d.nomeProfessor}" escapeXml="false" /></td>
 							<td><c:out value="${d.materia}" escapeXml="false" /></td>
 							<td><c:out value="${d.diaAula}" escapeXml="false" /></td>

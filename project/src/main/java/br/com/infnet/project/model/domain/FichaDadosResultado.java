@@ -17,11 +17,11 @@ public class FichaDadosResultado {
 	private String matricula;
 	private Boolean ativo;
 	private String nomeResponsavel;
-	private String parentesco;
+	private Character parentesco;
 	private String nomeProfessor;
 	private String materia;
 	private String diaAula;
-	private String numSala;
+	private Integer numSala;
 	
 	public FichaDadosResultado() {
 	}
@@ -32,11 +32,11 @@ public class FichaDadosResultado {
 		String matricula,
 		Boolean ativo,
 		String nomeResponsavel,
-		String parentesco,
+		Character parentesco,
 		String nomeProfessor,
 		String materia,
 		String diaAula,
-		String numSala
+		Integer numSala
 	) {
 		this.idFicha = idFicha;
 		this.nomeAluno = nomeAluno;
@@ -90,11 +90,11 @@ public class FichaDadosResultado {
 		this.nomeResponsavel = nomeResponsavel;
 	}
 
-	public String getParentesco() {
+	public Character getParentesco() {
 		return parentesco;
 	}
 
-	public void setParentesco(String parentesco) {
+	public void setParentesco(Character parentesco) {
 		this.parentesco = parentesco;
 	}
 
@@ -121,19 +121,19 @@ public class FichaDadosResultado {
 	public void setDiaAula(String diaAula) {
 		this.diaAula = diaAula;
 	}
-
-	public String getNumSala() {
+	
+	public Integer getNumSala() {
 		return numSala;
 	}
 
-	public void setNumSala(String numSala) {
+	public void setNumSala(Integer numSala) {
 		this.numSala = numSala;
 	}
-	
+
 	@Override
 	public String toString() {
 		return String.format(
-			"{ %d;%s;%s;%s;%s;%s;%s;%s;%s;%s }",
+			"{ %d;%s;%s;%s;%s;%s;%s;%s;%s;%d }",
 			this.idFicha,
 			this.nomeAluno,
 			this.matricula,

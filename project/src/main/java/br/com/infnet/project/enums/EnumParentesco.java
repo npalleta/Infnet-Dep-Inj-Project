@@ -11,6 +11,6 @@ public enum EnumParentesco {
 	}
 
 	public char getParentesco() {
-		return parentesco;
+		return this.parentesco;
 	}
 }

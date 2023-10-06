@@ -32,19 +32,19 @@
 				<label class="control-label col-sm-2" for="">Dia da Aula:</label>
 					<div class="col-sm-offset-2 col-sm-10"> 
 						<div class="radio">
-							<label><input type="radio" id="diaAula" name="diaAula" value="Segunda" checked>Segunda-Feira</label>
+							<label><input type="radio" id="diaAula" name="diaAula" value="Segunda-Feira" checked>Segunda-Feira</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" id="diaAula" name="diaAula" value="Terça">Terça-Feira</label>
+							<label><input type="radio" id="diaAula" name="diaAula" value="Terça-Feira">Terça-Feira</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" id="diaAula" name="diaAula" value="Quarta" >Quarta-Feira</label>
+							<label><input type="radio" id="diaAula" name="diaAula" value="Quarta-Feira">Quarta-Feira</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" id="diaAula" name="diaAula" value="Quinta">Quinta-Feira</label>
+							<label><input type="radio" id="diaAula" name="diaAula" value="Quinta-Feira">Quinta-Feira</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" id="diaAula" name="diaAula" value="Sexta" >Sexta-Feira</label>
+							<label><input type="radio" id="diaAula" name="diaAula" value="Sexta-Feira">Sexta-Feira</label>
 						</div>
 					</div>
 				</div>

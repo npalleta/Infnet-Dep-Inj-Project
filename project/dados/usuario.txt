@@ -1,0 +1,3 @@
+admin@admin.com;Administrator;123
+elberth@elberth.com;Elberth;123
+aluno@aluno.com;Aluno;123

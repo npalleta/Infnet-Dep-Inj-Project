@@ -53,7 +53,7 @@ public class AlunoController {
 		model.addAttribute("aluno", aluno);
 		boolean verificador = (ativo != null) && ativo;
 		aluno.setAtivo(verificador);
-		alunoService.incluir(aluno);
+		this.alunoService.incluir(aluno);
 		return "redirect:/responsavel/cadastro";
 	}
 

@@ -38,7 +38,7 @@
 									<td><c:out value="Pai" /></td>
 								</c:when>
 								<c:otherwise>
-									<td><c:out value="Outros" /></td>
+									<td><c:out value="Outro" /></td>
 								</c:otherwise>
 							</c:choose>
 							<td><a href="/responsavel/${r.idResponsavel}/excluir">excluir</a></td>

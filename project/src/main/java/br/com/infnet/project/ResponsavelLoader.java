@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import br.com.infnet.project.model.domain.Aluno;
 import br.com.infnet.project.model.domain.Responsavel;
 
-@Order(2)
+@Order(3)
 @Component
 public class ResponsavelLoader implements ApplicationRunner {
 

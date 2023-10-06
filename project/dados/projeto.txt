@@ -1,0 +1,28 @@
+P;Registro Escolar;Projeto de Gestão de Cadastro Escolar
+C;Aluno
+A;idAluno;Integer;ID do aluno.
+A;nomeAluno;String;Nome do aluno.
+A;matricula;String;Matrícula do aluno.
+A;ativo;Boolean;SIM - Aluno ainda matriculado - ativo no quadro de alunos | NÃO - Aluno não está mais participando do quadro de alunos da escola.
+A;numSala;Integer;Número da sala frequentada pelo aluno.
+C;Responsável
+A;idResponsavel;Integer;ID do responsável.
+A;nomeResponsavel;String;Nome do responsável pelo aluno.
+A;parentesco;Character;Parentesco do responsável.
+C;Professor
+A;idProfessor;Integer;ID do professor.
+A;nomeProfessor;String;Nome do professor.
+A;materia;String;Matéria de domínio do docente.
+A;diaAula;String;Dia da semana que a aula será apresentada.
+A;numSala;Integer;Número da sala onde a aula será apresentada.
+C;Ficha de Dados - Resultado;
+A;idFicha;Integer;Id da Ficha Escolar com os dados cadastrados.
+A;nomeAluno;String;Nome do aluno.
+A;matricula;String;Matrícula do aluno.
+A;ativo;Boolean;SIM - Aluno ainda matriculado - ativo no quadro de alunos | NÃO - Aluno não está mais participando do quadro de alunos da escola.
+A;nomeResponsavel;String;Nome do responsável pelo aluno.
+A;parentesco;Character;Parentesco do responsável.
+A;nomeProfessor;String;Nome do professor.
+A;materia;String;Matéria de domínio do docente.
+A;diaAula;String;Dia da semana que a aula será apresentada.
+A;numSala;Integer;Número da sala onde a aula será apresentada.

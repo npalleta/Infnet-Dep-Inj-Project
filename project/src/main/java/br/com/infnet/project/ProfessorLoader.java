@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import br.com.infnet.project.model.domain.Aluno;
 import br.com.infnet.project.model.domain.Professor;
 
-@Order(3)
+@Order(4)
 @Component
 public class ProfessorLoader implements ApplicationRunner {
 

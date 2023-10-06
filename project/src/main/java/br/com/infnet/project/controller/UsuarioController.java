@@ -49,9 +49,12 @@ public class UsuarioController {
 		return "redirect:/";
 	}
 
-	@GetMapping(value = "/usuario/{email}/excluir")
-	public String exclusao(@PathVariable String email) {
-		this.usuarioService.excluir(email);
+	// @GetMapping(value = "/usuario/{email}/excluir")
+	@GetMapping(value = "/usuario/{id}/excluir")
+	public String exclusao(@PathVariable Integer id) {
+		// this.usuarioService.excluir(email);
+		// this.usuarioService.excluirPorEmail(email);
+		this.usuarioService.exclui(id);
 		return "redirect:/usuario/lista";
 	}
 }

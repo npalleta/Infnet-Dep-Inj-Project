@@ -37,7 +37,7 @@
 							<label><input type="radio" id="parentesco" name="parentesco" value="P">Pai</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" id="parentesco" name="parentesco" value="O" >Outros</label>
+							<label><input type="radio" id="parentesco" name="parentesco" value="O">Outros</label>
 						</div>
 					</div>
 				</div>

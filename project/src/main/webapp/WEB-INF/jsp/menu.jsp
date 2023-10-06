@@ -3,14 +3,22 @@
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/">Registro Escolar</a>
+			<a class="navbar-brand" href="/sobre">Registro Escolar</a>
 		</div>
 		<ul class="nav navbar-nav">
 			<li class="active">
 				<a href="/">Home</a>
 			</li>
 			<c:if test="${not empty user}">
-				<li><a href="/usuario/lista">Usuários</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="/">Usuários
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/usuario/cadastro">Cadastro</a></li>
+						<li><a href="/usuario/lista">Lista de Usuários</a></li>
+					</ul>
+				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="/">Aluno
 						<span class="caret"></span>

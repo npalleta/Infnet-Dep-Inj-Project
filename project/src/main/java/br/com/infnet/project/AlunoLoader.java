@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 import br.com.infnet.project.model.domain.Aluno;
 import br.com.infnet.project.model.service.AlunoService;
 
-@Order(1)
+@Order(2)
 @Component
 public class AlunoLoader implements ApplicationRunner {
 

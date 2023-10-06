@@ -22,6 +22,7 @@
                         <th>Número da Sala</th>
                         <th>ID do Aluno</th>
                         <th>Matéria</th>
+                        <th>Dia da Aula</th>
                         <th>Clique para excluir</th>
                     </tr>
                 </thead>
@@ -33,6 +34,7 @@
 							<td>${p.numSala}</td>
 							<td>${p.aluno.idAluno}</td>
 							<td>${p.materia}</td>
+							<td>${p.diaAula}</td>
 							<td><a href="/professor/${p.idProfessor}/excluir">excluir</a></td>
 						</tr>
 					</c:forEach>

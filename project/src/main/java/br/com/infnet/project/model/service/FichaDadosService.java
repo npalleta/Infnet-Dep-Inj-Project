@@ -55,11 +55,11 @@ public class FichaDadosService {
 			this.fichaDadosResultado.setMatricula(dados[2].toString());
 			this.fichaDadosResultado.setAtivo((Boolean) dados[3]);
 			this.fichaDadosResultado.setNomeResponsavel(dados[4].toString());
-			this.fichaDadosResultado.setParentesco(dados[5].toString());
+			this.fichaDadosResultado.setParentesco((Character) dados[5]);
 			this.fichaDadosResultado.setNomeProfessor(dados[6].toString());
 			this.fichaDadosResultado.setMateria(dados[7].toString());
 			this.fichaDadosResultado.setDiaAula(dados[8].toString());
-			this.fichaDadosResultado.setNumSala(dados[9].toString());
+			this.fichaDadosResultado.setNumSala((Integer) dados[9]);
 		}
 		
 		out.printf("%n[Ficha Final] Inclusão realizada com sucesso: %s%n", this.fichaDadosResultado);

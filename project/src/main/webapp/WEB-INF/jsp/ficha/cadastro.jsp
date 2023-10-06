@@ -45,6 +45,35 @@
 						<input type="text" class="form-control" id="nomeResponsavel" name="nomeResponsavel" value="${responsavel.nomeResponsavel}" readonly />
 					</div>
 				</div>
+				<c:choose>
+					<c:when test="${responsavel.parentesco eq 'M'.charAt(0)}">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="">Parentesco:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" value="Mãe" readonly />
+								<input type="hidden" class="form-control" id="parentesco" name="parentesco" value="${responsavel.parentesco}" readonly />
+							</div>
+						</div>
+					</c:when>
+					<c:when test="${responsavel.parentesco eq 'P'.charAt(0)}">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="">Parentesco:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" value="Pai" readonly />
+								<input type="hidden" class="form-control" id="parentesco" name="parentesco" value="${responsavel.parentesco}" readonly />
+							</div>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="">Parentesco:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" value="Outros" readonly />
+								<input type="hidden" class="form-control" id="parentesco" name="parentesco" value="${responsavel.parentesco}" readonly />
+							</div>
+						</div>
+					</c:otherwise>
+				</c:choose>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="">Nome do Professor:</label>
 					<div class="col-sm-10">

@@ -55,7 +55,8 @@ public class Usuario {
 	@Override
 	public String toString() {
 		return String.format(
-			"{ %s;%s;%s }",
+			"{ %d;%s;%s;%s }",
+			this.id,
 			this.nome,
 			this.email,
 			this.senha
