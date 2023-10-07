@@ -1,0 +1,32 @@
+## Fluxo da Solução - Cadastro de Ficha Escolar
+<br />
+
+1. Acessar a home: http://localhost:8080.
+2. A tela da Home será apresentada:
+<br />
+
+![HOME](./screenshots/home.png "Home")
+
+3. Realize o Sign-up e o Login.
+<br />
+
+![SIGNIN](./screenshots/sign-in.png "Sign-In")
+
+![LOGIN](./screenshots/login.png "Login")
+
+4. Cada aba do menu possui 2 sub-abas: Cadastro e Listagem:
+<br />
+
+![SIGNIN](./screenshots/home-2.png "Sign-In")
+
+4. Realize os cadastros na sequência:
+Aluno > Responsável > Professor > Efetivação da Ficha de Cadastro.
+<br />
+
+![CADASTROALUNO](./screenshots/cadastro_aluno.png "Aluno")
+
+![CADASTRORESP](./screenshots/cadastro-responsavel.png "Responsável")
+
+![CADASTROPROF](./screenshots/cadastro-professor.png "Professor")
+
+![CADASTROFICHA](./screenshots/ficha-dados-final-efetivada.png "Ficha")
