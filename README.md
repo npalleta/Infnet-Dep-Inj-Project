@@ -24,9 +24,9 @@ Para utilizar e entender o fluxo das páginas, clique no manual que as imagens e
 
 [- MANUAL](MANUAL.md)
 
-[⬆ Voltar ao topo](#Infnet-Dep-Inj-Project)
-
 ## 📁 Sobre as Branches
 
 - main: projeto com as rúbricas, criando e acessando o banco de dados e suas tabelas;
 - feat/without_repository: projeto com os loaders e mappers.
+
+[⬆ Voltar ao topo](#Infnet-Dep-Inj-Project)
