@@ -47,11 +47,11 @@
 
 ![SOBRE](./screenshots/sobre.png "Sobre")
 
-8. <p style="color:red;"><< IMPORTANTE >><p>
+8. [!IMPORTANTE]
 **Para a exclusão dos dados, a sequência para não quebrar as regras de foreign key deve ser:**
 
 **Excluir: Ficha Escolar > Responsável > Professor > Aluno.**
 
-🔙 [Voltar ao repositório](https://github.com/npalleta/Infnet-Dep-Inj-Project)
+🔙 [Voltar](https://github.com/npalleta/Infnet-Dep-Inj-Project)
 
 ---
