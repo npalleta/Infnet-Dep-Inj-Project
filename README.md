@@ -12,8 +12,16 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## 🚀 Realizando o Setup
 
-Faça o clone o repositório e:
+Faça o clone do repositório e:
 
 1. Na pasta **docker**, execute o comando *docker compose up -d* para subir o banco;
 2. Crie a database **dbRegEscolar** -> *CREATE DATABASE IF NOT EXISTS dbRegEscolar*;
 3. Vá até a pasta **project** e execute o comando: *mvn spring-boot:run -X -e*.
+
+## 👨‍💻 Utilizando o Projeto
+
+Para utilizar e entender o fluxo das páginas, clique no manual que as imagens em anexo auxiliaram na navegação entre cadastros:
+
+[- MANUAL](MANUAL.md)
+
+[⬆ Voltar ao topo](#Infnet-Dep-Inj-Project)
