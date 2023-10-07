@@ -20,7 +20,7 @@
 ![SIGNIN](./screenshots/home-2.png "Sign-In")
 
 4. Realize os cadastros na sequência:
-Aluno > Responsável > Professor > Efetivação da Ficha de Cadastro.
+**Aluno > Responsável > Professor > Efetivação da Ficha de Cadastro.**
 <br />
 
 ![CADASTROALUNO](./screenshots/cadastro-aluno.png "Aluno")
@@ -47,10 +47,10 @@ Aluno > Responsável > Professor > Efetivação da Ficha de Cadastro.
 
 ![SOBRE](./screenshots/sobre.png "Sobre")
 
-8. <IMPORTANTE>
-Para a exclusão dos dados, a sequência para não quebrar as regras de foreign key deve ser:
+8. <p style="color:red;"><< IMPORTANTE >><p>
+**Para a exclusão dos dados, a sequência para não quebrar as regras de foreign key deve ser:**
 
-Excluir: Ficha Escolar > Responsável > Professor > Aluno.
+**Excluir: Ficha Escolar > Responsável > Professor > Aluno.**
 
 🔙 [Voltar ao repositório](https://github.com/npalleta/Infnet-Dep-Inj-Project)
 
