@@ -47,9 +47,7 @@
 
 ![SOBRE](./screenshots/sobre.png "Sobre")
 
-> [!WARNING]
-
-8. 	<!> !IMPORTANTE
+8. :warning: IMPORTANTE :warning:
 **Para a exclusão dos dados, a sequência para não quebrar as regras de foreign key deve ser:**
 
 **Excluir: Ficha Escolar > Responsável > Professor > Aluno.**
