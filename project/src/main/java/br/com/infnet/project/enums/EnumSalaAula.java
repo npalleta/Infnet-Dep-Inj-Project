@@ -19,24 +19,24 @@ public enum EnumSalaAula {
 		String materia = "";
 
 		switch (numSala) {
-		case 210:
-			materia = "Ciências";
-			break;
-		case 211:
-			materia = "Geografia";
-			break;
-		case 212:
-			materia = "História";
-			break;
-		case 213:
-			materia = "Matemática";
-			break;
-		case 214:
-			materia = "Português";
-			break;
-		default:
-			materia = "Ciências";
-			break;
+			case 210:
+				materia = "Ciências";
+				break;
+			case 211:
+				materia = "Geografia";
+				break;
+			case 212:
+				materia = "História";
+				break;
+			case 213:
+				materia = "Matemática";
+				break;
+			case 214:
+				materia = "Português";
+				break;
+			default:
+				materia = "Ciências";
+				break;
 		}
 		return materia;
 	}
