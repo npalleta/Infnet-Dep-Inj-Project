@@ -23,10 +23,21 @@
 Aluno > Responsável > Professor > Efetivação da Ficha de Cadastro.
 <br />
 
-![CADASTROALUNO](./screenshots/cadastro_aluno.png "Aluno")
+![CADASTROALUNO](./screenshots/cadastro-aluno.png "Aluno")
 
 ![CADASTRORESP](./screenshots/cadastro-responsavel.png "Responsável")
 
 ![CADASTROPROF](./screenshots/cadastro-professor.png "Professor")
 
-![CADASTROFICHA](./screenshots/ficha-dados-final-efetivada.png "Ficha")
+![CADASTROFICHA](./screenshots/cadastro-ficha-dados.png "Ficha")
+
+5. Após todo o processo, a Lista de Cadastramento - Ficha de Dados Efetivada será apresentada.
+<br />
+
+![LISTAGEMFICHA](./screenshots/ficha-dados-final-efetivada.png "Ficha Efetivada")
+
+6. Tratamento de exceção:
+- Caso seja inserida uma sala diferente do Enum declarado dentro do projeto, a seguinte tela será apresentada:
+<br />
+
+![EXCEÇÃO](./screenshots/exceção.png "Exceção")
