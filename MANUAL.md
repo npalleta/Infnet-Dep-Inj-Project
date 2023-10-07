@@ -41,3 +41,8 @@ Aluno > Responsável > Professor > Efetivação da Ficha de Cadastro.
 <br />
 
 ![EXCEÇÃO](./screenshots/exceção.png "Exceção")
+
+7. Clicando no canto superior esquerdo, Registro Escolar, será apresentado detalhes sobre as classes como ensinado em aula.
+<br />
+
+![SOBRE](./screenshots/sobre.png "Sobre")
